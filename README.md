@@ -17,7 +17,8 @@ El núcleo del proyecto se basa en un **Algoritmo de Convergencia Matemática**:
 - **Validación de Entradas (Sanitización):** El programa maneja entradas vacías, caracteres no deseados y números fuera del rango [1..3] sin romper la lógica del mazo.
 - **Gestión de Estados:** El contador de rondas solo progresa ante ingresos de datos válidos.
 - **Manipulación de Arreglos:** Implementación de un sistema de reparto "tipo póker" (distribución round-robin) para sincronizar lo que el usuario ve visualmente con la estructura de datos interna.
-
+- **Arquitectura Lineal (Sin Procedimientos/Funciones):** El diseño se mantuvo deliberadamente en un bloque principal para demostrar el dominio absoluto sobre el flujo de control, la anidación de ciclos y la gestión de variables globales sin abstracciones externas.
+  
 ## 💻 Cómo ejecutarlo
 1. Descarga el archivo `.pas`.
 2. Ábrelo con **Lazarus IDE** o cualquier compilador de Pascal (como Free Pascal).
@@ -25,3 +26,4 @@ El núcleo del proyecto se basa en un **Algoritmo de Convergencia Matemática**:
 
 ---
 Desarrollado con fines educativos para demostrar lógica algorítmica y control de flujo. 😎
+
