@@ -22,6 +22,8 @@ begin
     ronda:=0;
     randomize;
     Writeln('Haremos 3 secuencias.. Empecemos..');
+
+    //NUMEROS ALEATORIOS Y LLENADO DEL 'DECK'
     for i:=1 to MAX_TARJETAS do begin
     repeat
     repetido:=false;
@@ -44,7 +46,7 @@ begin
         grupo3[j]:= deck[i];
         i+= 1;
         j+= 1;
-    until i >= MAX_TARJETAS;
+    until i >= MAX_TARJETAS;//LLENADO DEL 'DECK' COMPLETO
 
     //INICIO RONDA
     repeat
@@ -107,7 +109,7 @@ begin
     if error then begin
          write('ERROR: Ingresa un numero entre [1,2,3]: ');
 
-    end else begin
+    end else begin //VOLVEMOS A BARAJAR SI NO HAY ERROR
         i:= 1;
         j:= 1;
    repeat
@@ -119,10 +121,11 @@ begin
         i+= 1;
         j+= 1;
     until i >= MAX_TARJETAS;
-    ronda+=1;
+    ronda+=1;//SOLO AUMENTAMOS LAS RONDAS SI NO HAY ERROR
     end;
 
-    until ronda = 3;//END WHILE
+    until ronda = 3;//FIN DE LAS 3 RONDAS
+
     write('Buscando en tu mente');
     for i := 1 to 3 do begin
     delay(500); // Requiere la unidad 'crt'
